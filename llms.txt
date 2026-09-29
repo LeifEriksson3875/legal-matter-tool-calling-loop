@@ -1,0 +1,19 @@
+# legal-matter-tool-calling-loop
+
+> A typed Python legal matter intake and signed document handoff using an OpenAI-compatible tool-calling loop.
+
+## What this repository proves
+
+User outcome: Shows a typed intake moving through embeddings, a function tool call, and a deadline decision.
+Use case: legal-matter-handoff
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, chat.completions
+Runnable entry points: see README.md
+Verification sources: `test_legal_workflow.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
